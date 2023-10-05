@@ -1,6 +1,7 @@
 # Brief Ideas
 
 - Máximo 200 palabras por archivo
+- Una oración por línea
 
 ```
 Aa. Aves marinas de madriguera
@@ -23,9 +24,7 @@ Db. Bioseguridad
 Dc. Política ambiental (gestión, legislación, programas de manejo, AICAs, etc.)
 Ea. Software
 Fa. Remuestreo
-```
 
-```
 10. Pacífico norte [19] `Pacificonorte`
 11. Península de Baja California [19.1] `PBC`
     - Corondo
@@ -73,17 +72,15 @@ Fa. Remuestreo
 40. Golfo de México [13, 14] y Mar Caribe [15] `GMMC`
 50. Territorio Insular Mexicano
 60. El resto del mundo
-
-
 70. GECI
-80. Equpo de Ciencia de datos
+80. Equipo de Ciencia de datos
 ```
 
-Notas:
+## Notas
 
 - Los números entre corchetes indican la ecorregión marina a la que pertenecen según: Wilkinson (2009).
 
-Referencias:
+## Referencias
 
 - Wilkinson, T., E. Wiken, J. Bezaury Creel, T. Hourigan, T. Agardy, H. Herrmann, L. Janishevski, C. Madden, L. Morgan y
   M. Padilla, 2009. Ecorregiones marinas de América del Norte, Comisión para la Cooperación Ambiental, Montreal, 200 pp.
