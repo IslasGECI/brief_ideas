@@ -47,7 +47,7 @@ Fa. Remuestreo
     - Socorro
     - Roca Partida
     - Clarión
-30 Golfo de California [18] `Golfocalifornia`
+30. Golfo de California [18] `Golfocalifornia`
     - Santa Cruz
     - San José
     - San Francisco
