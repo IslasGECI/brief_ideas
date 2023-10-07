@@ -24,9 +24,17 @@ Cc. Geomorfología (batimetría, elevación, etc.)
 Da. Aprendizaje ambiental (y LEO)
 Db. Bioseguridad
 Dc. Política ambiental (gestión, legislación, programas de manejo, AICAs, etc.)
-Ea. Software
+Ea. R
+Eb. Python
+Ec. LaTeX
+Ed. Markdown
+Ee. Make
+Ef. VS Code
+Eg. Git
+Eh. Docker
+Ei. Vim
+Ej. LSP
 Fa. Remuestreo
-
 10. Pacífico norte [19] `Pacificonorte`
 11. Península de Baja California [19.1] `PBC`
     - Corondo
