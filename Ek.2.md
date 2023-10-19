@@ -10,7 +10,7 @@
 - Crear [`~/.ssh/config`](#sshconfig)
 - Crear la bóveda de los secretos con las variables necesarias
 - Instalar `geci-testmake`
-- Crear algo similar al ejemplo [`dev-init`](#dev-init)
+- Crear un alias para iniciar sesión, [por ejemplo](#aliases)
 - En Bitbucket otorgar privilegios a repos:
     - `hola`
     - El repo clase 3 correspondiente
@@ -20,7 +20,7 @@
 ---
 
 ## Notas
-#### `~/.ssh/config`
+### `~/.ssh/config`
 ```
 Host devserver
   ForwardAgent yes
@@ -30,7 +30,7 @@ Host devserver
   User <USERNAME>
 ```
 
-### `dev-init`
+### aliases
      
 Linux:
 ```
