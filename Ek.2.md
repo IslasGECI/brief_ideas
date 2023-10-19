@@ -30,7 +30,7 @@ Host devserver
   User <USERNAME>
 ```
 
-### Aliases
+### Alias
      
 Linux:
 ```
