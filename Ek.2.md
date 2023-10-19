@@ -5,35 +5,22 @@
 - Crear clave con `ssh-keygen`
 - Agregar clave SSH pública a GitHub y Bitbucket
 - En Bitbucket, crear un _app password_
-- Crear repo `dotfiles` con archivo `.gitconfig`
-- Agregar al nuevo usuario en el playbook [`setup_users.yml`](https://github.com/IslasGECI/development_server_setup/blob/develop/ansible/setup_users.yml) de Ansible en el repo `development_server_setup`
-- En `~/.profile` hacer `source ~/.vault/.secrets`
-- Crear `~/.ssh/config`
-- Agregar las siguientes variables a `~/.vault/.secrets`:
-    - `TABLERO_API_SECRET_KEY`
-    - `BITBUCKET_USERNAME`
-    - `BITBUCKET_PASSWORD`
+- Crear repositorio `dotfiles` con archivo `.gitconfig` en la cuenta de GitHub del nuevo usuario
+- En el repositorio `development_server_setup`, agregar al nuevo usuario en el playbook de Ansible [`setup_users.yml`](https://github.com/IslasGECI/development_server_setup/blob/develop/ansible/setup_users.yml)
+- Crear [`~/.ssh/config`](#sshconfig)
+- Crear la bóveda de los secretos con las variables necesarias
 - Instalar `geci-testmake`
-- Crear algo similar al ejemplo `dev-init` de abajo
+- Crear algo similar al ejemplo `dev-init`[^devinit]
 - En Bitbucket otorgar privilegios a repos:
     - `hola`
     - El repo clase 3 correspondiente
     - El repo de datos correspondiente
 
----
-
-`~/.vault/.secret`
-
-```
-export BITBUCKET_PASSWORD=<BITBUCKET APP PASSWORD>
-export BITBUCKET_USERNAME=***
-export TABLERO_API_SECRET_KEY=***
-```
 
 ---
 
 
-`~/.ssh/config`
+### `~/.ssh/config`
 
 ```
 Host devserver
@@ -41,20 +28,17 @@ Host devserver
   HostName islasgeci.dev
   ServerAliveCountMax 10
   ServerAliveInterval 60
-  User siduartep
+  User <USERNAME>
 ```
 
----
-
-`dev-init`
-
-Linux:
-```
-ssh-keygen -f "$HOME/.ssh/known_hosts" -R "islasgeci.dev
-"ssh-keyscan "islasgeci.dev" >> "$HOME/.ssh/known_hosts"
-scp -pr ~/.vault <USERNAME>@islasgeci.dev:/home/<USERNAME>/.vault
-ssh devserver
-```
+[^devinit]:
+    Linux:
+    ```
+    ssh-keygen -f "$HOME/.ssh/known_hosts" -R "islasgeci.dev"
+    ssh-keyscan "islasgeci.dev" >> "$HOME/.ssh/known_hosts"
+    scp -pr ~/.vault <USERNAME>@islasgeci.dev:/home/<USERNAME>/.vault
+    ssh devserver
+    ```
 
 Windows:
 ```
