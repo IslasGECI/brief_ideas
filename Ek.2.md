@@ -7,7 +7,7 @@
 - En Bitbucket, crear un _app password_
 - Crear repositorio `dotfiles` con archivo `.gitconfig` en la cuenta de GitHub del nuevo usuario
 - En el repositorio `development_server_setup`, agregar al nuevo usuario en el playbook de Ansible [`setup_users.yml`](https://github.com/IslasGECI/development_server_setup/blob/develop/ansible/setup_users.yml)
-- Crear `~/.ssh/config`[sshconfig]
+- Crear `~/.ssh/config`[^sshconfig]
 - Crear la bóveda de los secretos con las variables necesarias
 - Instalar `geci-testmake`
 - Crear algo similar al ejemplo `dev-init`[^devinit]
@@ -20,7 +20,7 @@
 ---
 
 
-[sshconfig]:
+[^sshconfig]:
     ```
     Host devserver
       ForwardAgent yes
