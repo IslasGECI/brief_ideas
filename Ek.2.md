@@ -7,10 +7,10 @@
 - En Bitbucket, crear un _app password_
 - Crear repositorio `dotfiles` con archivo `.gitconfig` en la cuenta de GitHub del nuevo usuario
 - En el repositorio `development_server_setup`, agregar al nuevo usuario en el playbook de Ansible [`setup_users.yml`](https://github.com/IslasGECI/development_server_setup/blob/develop/ansible/setup_users.yml)
-- Crear `~/.ssh/config`[^sshconfig]
+- Crear [`~/.ssh/config`](#sshconfig)
 - Crear la bóveda de los secretos con las variables necesarias
 - Instalar `geci-testmake`
-- Crear algo similar al ejemplo `dev-init`[^devinit]
+- Crear algo similar al ejemplo [`dev-init`](#dev-init)
 - En Bitbucket otorgar privilegios a repos:
     - `hola`
     - El repo clase 3 correspondiente
@@ -19,32 +19,31 @@
 
 ---
 
+## Notas
+#### `~/.ssh/config`
+```
+Host devserver
+  ForwardAgent yes
+  HostName islasgeci.dev
+  ServerAliveCountMax 10
+  ServerAliveInterval 60
+  User <USERNAME>
+```
 
-[^sshconfig]:
-    ```
-    Host devserver
-      ForwardAgent yes
-      HostName islasgeci.dev
-      ServerAliveCountMax 10
-      ServerAliveInterval 60
-      User <USERNAME>
-    ```
-
-[^devinit]:
+### `dev-init`
      
-    Linux:
-    ```
-    ssh-keygen -f "$HOME/.ssh/known_hosts" -R "islasgeci.dev"
-    ssh-keyscan "islasgeci.dev" >> "$HOME/.ssh/known_hosts"
-    scp -pr ~/.vault <USERNAME>@islasgeci.dev:/home/<USERNAME>/.vault
-    ssh devserver
-    ```
+Linux:
+```
+ssh-keygen -f "$HOME/.ssh/known_hosts" -R "islasgeci.dev"
+ssh-keyscan "islasgeci.dev" >> "$HOME/.ssh/known_hosts"
+scp -pr ~/.vault <USERNAME>@islasgeci.dev:/home/<USERNAME>/.vault
+ssh devserver
+```
 
-    Windows:
-    ```
-    ssh-keygen -f ".ssh/known_hosts" -R "islasgeci.dev"
-    ssh-keyscan "islasgeci.dev" >> "$HOME/.ssh/known_hosts"
-    scp -pr .vault <USERNAME>@islasgeci.dev:/home/<USERNAME>/.vault
-    ssh -o ForwardAgent=yes <USERNAME>@islasgeci.dev
-    ```
-
+Windows:
+```
+ssh-keygen -f ".ssh/known_hosts" -R "islasgeci.dev"
+ssh-keyscan "islasgeci.dev" >> "$HOME/.ssh/known_hosts"
+scp -pr .vault <USERNAME>@islasgeci.dev:/home/<USERNAME>/.vault
+ssh -o ForwardAgent=yes <USERNAME>@islasgeci.dev
+```
