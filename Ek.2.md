@@ -5,7 +5,7 @@
 - Crear clave con el comando `ssh-keygen`
 - Crear [`~/.ssh/config`](#sshconfig)
 - Con la ayuda de tu analista de confianza, crear la bóveda de los secretos con las variables necesarias
-- Crear un alias para iniciar sesión, [por ejemplo](#aliases)
+- Crear un alias para iniciar sesión, como en [este ejemplo](#alias)
 ## ☁️ En la nube
 - Agregar clave SSH pública a [GitHub](https://github.com/settings/keys) y [Bitbucket](https://bitbucket.org/account/settings/ssh-keys/)
 - En Bitbucket, crear un [_app password_](https://bitbucket.org/account/settings/app-passwords/)
@@ -46,5 +46,3 @@ ssh-keyscan "islasgeci.dev" >> "$HOME/.ssh/known_hosts"
 scp -pr .vault <USERNAME>@islasgeci.dev:/home/<USERNAME>/.vault
 ssh -o ForwardAgent=yes <USERNAME>@islasgeci.dev
 ```
-
-
