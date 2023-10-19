@@ -40,10 +40,9 @@ Host devserver
     ssh devserver
     ```
 
-Windows:
-```
-ssh-keygen -f ".ssh/known_hosts" -R "islasgeci.dev"
-ssh-keyscan "islasgeci.dev" >> "$HOME/.ssh/known_hosts"
-scp -pr .vault <USERNAME>@islasgeci.dev:/home/<USERNAME>/.vault
-ssh -o ForwardAgent=yes <USERNAME>@islasgeci.dev
-```
+    Windows:
+    ssh-keygen -f ".ssh/known_hosts" -R "islasgeci.dev"
+    ssh-keyscan "islasgeci.dev" >> "$HOME/.ssh/known_hosts"
+    scp -pr .vault <USERNAME>@islasgeci.dev:/home/<USERNAME>/.vault
+    ssh -o ForwardAgent=yes <USERNAME>@islasgeci.dev
+
