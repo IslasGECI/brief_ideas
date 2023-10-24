@@ -1,7 +1,9 @@
 matrix:
 - name: Markdown
   aspell:
-    lang: es
+    lang:
+    - es
+    - en
   dictionary:
     wordlists:
     - .github/config/.wordlist.txt
