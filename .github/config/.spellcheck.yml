@@ -2,6 +2,7 @@ matrix:
 - name: Markdown
   aspell:
     lang: es
+    ignore-case: true
   dictionary:
     wordlists:
     - .github/config/.wordlist.txt
