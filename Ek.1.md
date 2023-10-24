@@ -21,11 +21,11 @@ sudo reboot
 ```bash
 ssh-keygen
 ```
-## ⏳ Programar los cronjobs para cada servidor
+## ⏳ Programar los cron jobs para cada servidor
 - Verificamos que el horario del servidor sea el de Ensenada (el ombligo del universo):
 ```
 ls -l /etc/localtime
 timedatectl
 timedatectl set America/Los_Angeles
 ```
-- Copiamos el crontab del repositorio [`provisioner`](https://github.com/IslasGECI/provisioner/blob/develop/src/Cronfile)
+- Copiamos el `crontab` del repositorio [`provisioner`](https://github.com/IslasGECI/provisioner/blob/develop/src/Cronfile)
