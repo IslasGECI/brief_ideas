@@ -1,9 +1,11 @@
 Ansible
+app
 Azure
 Bitbucket
 bootstrap
 Docker
 GitHub
+password
 playbook
 remuestreo
 SSH
