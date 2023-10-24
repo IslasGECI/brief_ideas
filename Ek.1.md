@@ -1,11 +1,11 @@
-## 👩🏿‍💻 Crear provisionador en Azure
+## 👩🏿‍💻 Crear proveedor en Azure
 - Usamos las características por defecto del servicio de MV en Azure.
 - Agregamos la clave pública de un miembro del equipo. 
 - Usuario: `ciencia_datos`
 - Nombre de computadora: `provisioner`
 
 ## 🐋 Instalar Docker en el servidor
-- Instalamos `docker` en el provisionador:
+- Instalamos `docker` en el proveedor:
 ```bash
 sudo apt update && sudo apt full-upgrade --yes
 sudo apt install docker.io
