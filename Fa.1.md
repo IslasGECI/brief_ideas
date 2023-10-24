@@ -2,11 +2,11 @@
 Generamos cinco distribuciones normales de tamaño 2000 con diferentes medias y la misma desviación estándar.
 
 <!-- ¿Cuál es la primera opción? -->
-Promediamos tomando sin reemplazo un elemento de cada distribución.
+En el primer ejemplo, promediamos tomando sin reemplazo un elemento de cada distribución.
 De esta manera obtenemos una distribución de 2000 promedios.
 
 <!-- ¿Cuál es la segundo opción? -->
-Concatenamos las cinco distribuciones en una sola meta-distribución de tamaño 10000.
+En el segundo ejemplo, concatenamos las cinco distribuciones en una sola meta-distribución de tamaño 10000.
 Hacemos remuestreo bootstrap tradicional, conservando el tamaño de la meta-distribución.
 Con este procedimiento generamos 2000 réplicas bootstrap del promedio.
 
