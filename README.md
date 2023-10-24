@@ -93,5 +93,4 @@ Fa. Remuestreo
 
 ## Referencias
 
-- Wilkinson, T., E. Wiken, J. Bezaury Creel, T. Hourigan, T. Agardy, H. Herrmann, L. Janishevski, C. Madden, L. Morgan y
-  M. Padilla, 2009. Ecorregiones marinas de América del Norte, Comisión para la Cooperación Ambiental, Montreal, 200 pp.
+- Wilkinson, T., E. Wiken, J. Bezaury Creel, T. Hourigan, T. Agardy, H. Herrmann, L. Janishevski, C. Madden, L. Morgan y M. Padilla, 2009. Ecorregiones marinas de América del Norte, Comisión para la Cooperación Ambiental, Montreal.
