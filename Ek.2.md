@@ -13,8 +13,8 @@
 - Solicitar agregar tu usuario de GitHub en el playbook de Ansible [`setup_users.yml`](https://github.com/IslasGECI/development_server_setup/blob/develop/ansible/setup_users.yml)
 - Pedir privilegios de Bitbucket para los repositorios:
     - `hola`
-    - El repo clase 3 correspondiente
-    - El repo de datos correspondiente
+    - El repositorio clase 3 correspondiente
+    - El repositorio de datos correspondiente
 
 ---
 
