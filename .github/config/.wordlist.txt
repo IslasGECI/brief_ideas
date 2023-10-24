@@ -4,5 +4,7 @@ Bitbucket
 bootstrap
 Docker
 GitHub
+playbook
 remuestreo
 SSH
+Windows
