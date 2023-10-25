@@ -1,7 +1,9 @@
 matrix:
 - name: Markdown
   aspell:
-    lang: es
+    lang:
+    - es
+    - en
     ignore-case: true
   dictionary:
     wordlists:
