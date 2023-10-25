@@ -3,17 +3,11 @@ matrix:
   aspell:
     lang: es
     ignore-case: true
+    mode: markdown
   dictionary:
     wordlists:
     - .github/config/.wordlist.txt
     encoding: utf-8
-  pipeline:
-  - pyspelling.filters.markdown:
-  - pyspelling.filters.html:
-      comments: false
-      ignores:
-      - code
-      - pre
   sources:
   - '*.md'
   default_encoding: utf-8
