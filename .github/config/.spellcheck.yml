@@ -9,9 +9,6 @@ matrix:
     encoding: utf-8
   pipeline:
   - pyspelling.filters.markdown:
-      ignores:
-      - code
-      - pre
   sources:
   - '*.md'
   default_encoding: utf-8
