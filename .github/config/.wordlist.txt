@@ -1,6 +1,8 @@
+AED
 Agardy
 Ansible
 app
+ArcGIS
 Azure
 Bezaury
 Bitbucket
@@ -9,6 +11,7 @@ Brief
 Creel
 cron
 Docker
+Drive
 ecorregión
 Ecorregiones
 GitHub
@@ -16,14 +19,18 @@ Herrmann
 Hourigan
 Janishevski
 jobs
+LookerStudio
 Madden
 Montreal
 Morgan
 OpenSSH
 password
 playbook
+PowerBI
+QGIS
 remuestreo
 SSH
+Tableau
 Wiken
 Wilkinson
 Windows
