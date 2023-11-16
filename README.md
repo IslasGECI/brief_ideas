@@ -36,6 +36,7 @@ Ei. Vim
 Ej. LSP
 Ek. IaC (Infrastructure as Code)
 Fa. Remuestreo
+Fb. Análisis Exploratorio de Datos (AED)
 10. Pacífico norte [19] `Pacificonorte`
 11. Península de Baja California [19.1] `PBC`
     - Corondo
