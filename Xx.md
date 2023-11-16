@@ -1,8 +1,9 @@
-<!-- Al asistir a la sesión de ERO acerca de LookerStudio llegamos a las siguientes conclusiones. -->
+## 📈📊 LookerStudio
+
 LookerStudio es equivalente a Tableau y PowerBI.
 Estas son herramientas especializadas para la visualización de datos que facilitan la creación de gráficas interactivas.
 Las gráficas las hacemos a partir de botones, es decir, los diseños ya vienen predefinidos.
-Estas herramientas no fueron diseñadas para generar infografías personalizadas.
+Estas herramientas no fueron pensadas para generar infografías con diseño personalizado.
 
 Hemos notado que el Análisis Exploratorio de Datos (AED) facilita el trabajo diario de los coordinadores.
 LookerStudio sería una opción para visualizar los AED.
