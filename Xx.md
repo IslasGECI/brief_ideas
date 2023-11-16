@@ -1,4 +1,4 @@
-## 📈📊 LookerStudio
+## 📈📊 LookerStudio para visualizar el Análisis Exploratorio de Datos 
 
 LookerStudio es equivalente a Tableau y PowerBI.
 Estas son herramientas especializadas para la visualización de datos que facilitan la creación de gráficas interactivas.
