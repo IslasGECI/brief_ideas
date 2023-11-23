@@ -1,19 +1,18 @@
-<!-- ¿Cómo hicimos el remuestreo regional? -->
-Generamos cinco distribuciones normales de tamaño 2000 con diferentes medias y la misma desviación estándar.
+Probamos dos maneras de calcular un estadístico proveniente de diferentes distribuciones.
+La intención es saber si existe diferencia entre los estadísticos.
 
-<!-- ¿Cuál es la primera opción? -->
-En el primer ejemplo, promediamos tomando sin reemplazo un elemento de cada distribución.
-De esta manera obtenemos una distribución de 2000 promedios.
+Generamos cinco distribuciones normales de tamaño 2,000 con diferentes medias y la misma desviación estándar.
+En el primer método generamos 2,000 réplicas del promedio tomando un elemento sin reemplazo de cada distribución.
+En el otro método concatenamos las distribuciones originales en una nueva meta distribución e hicimos un bootstrap tradicional.
+Con bootstrap tradicional nos referimos a cada muestra bootstrap conserva el tamaño original y que la distribución bootstrap es de 2,000 elementos.
 
-<!-- ¿Cuál es la segundo opción? -->
-En el segundo ejemplo, concatenamos las cinco distribuciones en una sola meta-distribución de tamaño 10000.
-Hacemos remuestreo bootstrap tradicional, conservando el tamaño de la meta-distribución.
-Con este procedimiento generamos 2000 réplicas bootstrap del promedio.
+Con el primer método calculamos una distribución de 2,000 réplicas del promedio.
+En el segundo ejemplo generamos una distribución bootstrap del promedio de la meta distribución.
+El promedio de las distribuciones de ambos métodos son iguales.
+La desviación estándar del primer método es mayor a la del segundo método.
 
-<!-- ¿Qué aprendimos? -->
-El promedio de la distribución del ejemplo 1 y de las réplicas del ejemplo 2 son iguales.
-La desviación estándar de la distribución en el ejemplo 1 es mayor a la de las réplicas del ejemplo 2.
-Al disminuir el tamaño de las muestras bootstrap en el ejemplo 2, incrementamos su desviación estándar.
+La desviación del ejemplo 1 incrementa debido a que disminuimos el número de elementos con el que calculamos las réplicas.
+
 
 ## Referencias
 - [`resample_clt_example`](https://github.com/IslasGECI/resample_clt_example)
